@@ -50,7 +50,7 @@ class hero(NPC):
 
 #EXERCISE POO 3
 
-class Hero:
+class Hero(NPC):
     def init(self):
         self.class_darmure = random.randint
 
@@ -67,7 +67,7 @@ class Hero:
         else:
             print("attaque echoue you bum")
 
-class Monstre:
+class Monstre(NPC):
     def init(self):
         self.class_darmure = random.randint(1, 12)
         self.point_de_vie = random.randint(1, 20)
